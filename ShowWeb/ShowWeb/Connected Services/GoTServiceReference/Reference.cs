@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpsonsWeb.SimpsonServiceReference {
+namespace SimpsonsWeb.GoTServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -91,32 +91,24 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SimpsonServiceReference.SimpsonsServiceSoap")]
-    public interface SimpsonsServiceSoap {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GoTServiceReference.GoTServiceSoap")]
+    public interface GoTServiceSoap {
         
         // CODEGEN: Generating message contract since element name HelloResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Hello", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.HelloResponse Hello(SimpsonsWeb.SimpsonServiceReference.HelloRequest request);
+        SimpsonsWeb.GoTServiceReference.HelloResponse Hello(SimpsonsWeb.GoTServiceReference.HelloRequest request);
         
         // CODEGEN: Generating message contract since element name GetAllCharactersResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAllCharacters", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.GetAllCharactersResponse GetAllCharacters(SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequest request);
+        SimpsonsWeb.GoTServiceReference.GetAllCharactersResponse GetAllCharacters(SimpsonsWeb.GoTServiceReference.GetAllCharactersRequest request);
         
         // CODEGEN: Generating message contract since element name lastName from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchByLastName", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.SearchByLastNameResponse SearchByLastName(SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequest request);
+        SimpsonsWeb.GoTServiceReference.SearchByLastNameResponse SearchByLastName(SimpsonsWeb.GoTServiceReference.SearchByLastNameRequest request);
         
         // CODEGEN: Generating message contract since element name firstName from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchByFirstName", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameResponse SearchByFirstName(SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequest request);
-        
-        // CODEGEN: Generating message contract since element name job from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SearchByJob", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.SearchByJobResponse SearchByJob(SimpsonsWeb.SimpsonServiceReference.SearchByJobRequest request);
-        
-        // CODEGEN: Generating message contract since element name CountNumberOfCharactersResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CountNumberOfCharacters", ReplyAction="*")]
-        SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersResponse CountNumberOfCharacters(SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequest request);
+        SimpsonsWeb.GoTServiceReference.SearchByFirstNameResponse SearchByFirstName(SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -126,12 +118,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class HelloRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Hello", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.HelloRequestBody Body;
+        public SimpsonsWeb.GoTServiceReference.HelloRequestBody Body;
         
         public HelloRequest() {
         }
         
-        public HelloRequest(SimpsonsWeb.SimpsonServiceReference.HelloRequestBody Body) {
+        public HelloRequest(SimpsonsWeb.GoTServiceReference.HelloRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -153,12 +145,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class HelloResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.HelloResponseBody Body;
+        public SimpsonsWeb.GoTServiceReference.HelloResponseBody Body;
         
         public HelloResponse() {
         }
         
-        public HelloResponse(SimpsonsWeb.SimpsonServiceReference.HelloResponseBody Body) {
+        public HelloResponse(SimpsonsWeb.GoTServiceReference.HelloResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -187,12 +179,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class GetAllCharactersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllCharacters", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequestBody Body;
+        public SimpsonsWeb.GoTServiceReference.GetAllCharactersRequestBody Body;
         
         public GetAllCharactersRequest() {
         }
         
-        public GetAllCharactersRequest(SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequestBody Body) {
+        public GetAllCharactersRequest(SimpsonsWeb.GoTServiceReference.GetAllCharactersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -214,12 +206,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class GetAllCharactersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAllCharactersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.GetAllCharactersResponseBody Body;
+        public SimpsonsWeb.GoTServiceReference.GetAllCharactersResponseBody Body;
         
         public GetAllCharactersResponse() {
         }
         
-        public GetAllCharactersResponse(SimpsonsWeb.SimpsonServiceReference.GetAllCharactersResponseBody Body) {
+        public GetAllCharactersResponse(SimpsonsWeb.GoTServiceReference.GetAllCharactersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -231,12 +223,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class GetAllCharactersResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.Character[] GetAllCharactersResult;
+        public SimpsonsWeb.GoTServiceReference.Character[] GetAllCharactersResult;
         
         public GetAllCharactersResponseBody() {
         }
         
-        public GetAllCharactersResponseBody(SimpsonsWeb.SimpsonServiceReference.Character[] GetAllCharactersResult) {
+        public GetAllCharactersResponseBody(SimpsonsWeb.GoTServiceReference.Character[] GetAllCharactersResult) {
             this.GetAllCharactersResult = GetAllCharactersResult;
         }
     }
@@ -248,12 +240,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByLastNameRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByLastName", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequestBody Body;
+        public SimpsonsWeb.GoTServiceReference.SearchByLastNameRequestBody Body;
         
         public SearchByLastNameRequest() {
         }
         
-        public SearchByLastNameRequest(SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequestBody Body) {
+        public SearchByLastNameRequest(SimpsonsWeb.GoTServiceReference.SearchByLastNameRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -282,12 +274,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByLastNameResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByLastNameResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByLastNameResponseBody Body;
+        public SimpsonsWeb.GoTServiceReference.SearchByLastNameResponseBody Body;
         
         public SearchByLastNameResponse() {
         }
         
-        public SearchByLastNameResponse(SimpsonsWeb.SimpsonServiceReference.SearchByLastNameResponseBody Body) {
+        public SearchByLastNameResponse(SimpsonsWeb.GoTServiceReference.SearchByLastNameResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -299,12 +291,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByLastNameResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByLastNameResult;
+        public SimpsonsWeb.GoTServiceReference.Character[] SearchByLastNameResult;
         
         public SearchByLastNameResponseBody() {
         }
         
-        public SearchByLastNameResponseBody(SimpsonsWeb.SimpsonServiceReference.Character[] SearchByLastNameResult) {
+        public SearchByLastNameResponseBody(SimpsonsWeb.GoTServiceReference.Character[] SearchByLastNameResult) {
             this.SearchByLastNameResult = SearchByLastNameResult;
         }
     }
@@ -316,12 +308,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByFirstNameRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByFirstName", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequestBody Body;
+        public SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequestBody Body;
         
         public SearchByFirstNameRequest() {
         }
         
-        public SearchByFirstNameRequest(SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequestBody Body) {
+        public SearchByFirstNameRequest(SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -350,12 +342,12 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByFirstNameResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByFirstNameResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameResponseBody Body;
+        public SimpsonsWeb.GoTServiceReference.SearchByFirstNameResponseBody Body;
         
         public SearchByFirstNameResponse() {
         }
         
-        public SearchByFirstNameResponse(SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameResponseBody Body) {
+        public SearchByFirstNameResponse(SimpsonsWeb.GoTServiceReference.SearchByFirstNameResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -367,245 +359,91 @@ namespace SimpsonsWeb.SimpsonServiceReference {
     public partial class SearchByFirstNameResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByFirstNameResult;
+        public SimpsonsWeb.GoTServiceReference.Character[] SearchByFirstNameResult;
         
         public SearchByFirstNameResponseBody() {
         }
         
-        public SearchByFirstNameResponseBody(SimpsonsWeb.SimpsonServiceReference.Character[] SearchByFirstNameResult) {
+        public SearchByFirstNameResponseBody(SimpsonsWeb.GoTServiceReference.Character[] SearchByFirstNameResult) {
             this.SearchByFirstNameResult = SearchByFirstNameResult;
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SearchByJobRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByJob", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByJobRequestBody Body;
-        
-        public SearchByJobRequest() {
-        }
-        
-        public SearchByJobRequest(SimpsonsWeb.SimpsonServiceReference.SearchByJobRequestBody Body) {
-            this.Body = Body;
-        }
+    public interface GoTServiceSoapChannel : SimpsonsWeb.GoTServiceReference.GoTServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class SearchByJobRequestBody {
+    public partial class GoTServiceSoapClient : System.ServiceModel.ClientBase<SimpsonsWeb.GoTServiceReference.GoTServiceSoap>, SimpsonsWeb.GoTServiceReference.GoTServiceSoap {
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string job;
-        
-        public SearchByJobRequestBody() {
+        public GoTServiceSoapClient() {
         }
         
-        public SearchByJobRequestBody(string job) {
-            this.job = job;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SearchByJobResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SearchByJobResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.SearchByJobResponseBody Body;
-        
-        public SearchByJobResponse() {
-        }
-        
-        public SearchByJobResponse(SimpsonsWeb.SimpsonServiceReference.SearchByJobResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class SearchByJobResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByJobResult;
-        
-        public SearchByJobResponseBody() {
-        }
-        
-        public SearchByJobResponseBody(SimpsonsWeb.SimpsonServiceReference.Character[] SearchByJobResult) {
-            this.SearchByJobResult = SearchByJobResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CountNumberOfCharactersRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountNumberOfCharacters", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequestBody Body;
-        
-        public CountNumberOfCharactersRequest() {
-        }
-        
-        public CountNumberOfCharactersRequest(SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class CountNumberOfCharactersRequestBody {
-        
-        public CountNumberOfCharactersRequestBody() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class CountNumberOfCharactersResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountNumberOfCharactersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersResponseBody Body;
-        
-        public CountNumberOfCharactersResponse() {
-        }
-        
-        public CountNumberOfCharactersResponse(SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class CountNumberOfCharactersResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string CountNumberOfCharactersResult;
-        
-        public CountNumberOfCharactersResponseBody() {
-        }
-        
-        public CountNumberOfCharactersResponseBody(string CountNumberOfCharactersResult) {
-            this.CountNumberOfCharactersResult = CountNumberOfCharactersResult;
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface SimpsonsServiceSoapChannel : SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap, System.ServiceModel.IClientChannel {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class SimpsonsServiceSoapClient : System.ServiceModel.ClientBase<SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap>, SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap {
-        
-        public SimpsonsServiceSoapClient() {
-        }
-        
-        public SimpsonsServiceSoapClient(string endpointConfigurationName) : 
+        public GoTServiceSoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public SimpsonsServiceSoapClient(string endpointConfigurationName, string remoteAddress) : 
+        public GoTServiceSoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SimpsonsServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public GoTServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public SimpsonsServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public GoTServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.HelloResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.Hello(SimpsonsWeb.SimpsonServiceReference.HelloRequest request) {
+        SimpsonsWeb.GoTServiceReference.HelloResponse SimpsonsWeb.GoTServiceReference.GoTServiceSoap.Hello(SimpsonsWeb.GoTServiceReference.HelloRequest request) {
             return base.Channel.Hello(request);
         }
         
         public string Hello() {
-            SimpsonsWeb.SimpsonServiceReference.HelloRequest inValue = new SimpsonsWeb.SimpsonServiceReference.HelloRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.HelloRequestBody();
-            SimpsonsWeb.SimpsonServiceReference.HelloResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).Hello(inValue);
+            SimpsonsWeb.GoTServiceReference.HelloRequest inValue = new SimpsonsWeb.GoTServiceReference.HelloRequest();
+            inValue.Body = new SimpsonsWeb.GoTServiceReference.HelloRequestBody();
+            SimpsonsWeb.GoTServiceReference.HelloResponse retVal = ((SimpsonsWeb.GoTServiceReference.GoTServiceSoap)(this)).Hello(inValue);
             return retVal.Body.HelloResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.GetAllCharactersResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.GetAllCharacters(SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequest request) {
+        SimpsonsWeb.GoTServiceReference.GetAllCharactersResponse SimpsonsWeb.GoTServiceReference.GoTServiceSoap.GetAllCharacters(SimpsonsWeb.GoTServiceReference.GetAllCharactersRequest request) {
             return base.Channel.GetAllCharacters(request);
         }
         
-        public SimpsonsWeb.SimpsonServiceReference.Character[] GetAllCharacters() {
-            SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequest inValue = new SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.GetAllCharactersRequestBody();
-            SimpsonsWeb.SimpsonServiceReference.GetAllCharactersResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).GetAllCharacters(inValue);
+        public SimpsonsWeb.GoTServiceReference.Character[] GetAllCharacters() {
+            SimpsonsWeb.GoTServiceReference.GetAllCharactersRequest inValue = new SimpsonsWeb.GoTServiceReference.GetAllCharactersRequest();
+            inValue.Body = new SimpsonsWeb.GoTServiceReference.GetAllCharactersRequestBody();
+            SimpsonsWeb.GoTServiceReference.GetAllCharactersResponse retVal = ((SimpsonsWeb.GoTServiceReference.GoTServiceSoap)(this)).GetAllCharacters(inValue);
             return retVal.Body.GetAllCharactersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.SearchByLastNameResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.SearchByLastName(SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequest request) {
+        SimpsonsWeb.GoTServiceReference.SearchByLastNameResponse SimpsonsWeb.GoTServiceReference.GoTServiceSoap.SearchByLastName(SimpsonsWeb.GoTServiceReference.SearchByLastNameRequest request) {
             return base.Channel.SearchByLastName(request);
         }
         
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByLastName(string lastName) {
-            SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequest inValue = new SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.SearchByLastNameRequestBody();
+        public SimpsonsWeb.GoTServiceReference.Character[] SearchByLastName(string lastName) {
+            SimpsonsWeb.GoTServiceReference.SearchByLastNameRequest inValue = new SimpsonsWeb.GoTServiceReference.SearchByLastNameRequest();
+            inValue.Body = new SimpsonsWeb.GoTServiceReference.SearchByLastNameRequestBody();
             inValue.Body.lastName = lastName;
-            SimpsonsWeb.SimpsonServiceReference.SearchByLastNameResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).SearchByLastName(inValue);
+            SimpsonsWeb.GoTServiceReference.SearchByLastNameResponse retVal = ((SimpsonsWeb.GoTServiceReference.GoTServiceSoap)(this)).SearchByLastName(inValue);
             return retVal.Body.SearchByLastNameResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.SearchByFirstName(SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequest request) {
+        SimpsonsWeb.GoTServiceReference.SearchByFirstNameResponse SimpsonsWeb.GoTServiceReference.GoTServiceSoap.SearchByFirstName(SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequest request) {
             return base.Channel.SearchByFirstName(request);
         }
         
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByFirstName(string firstName) {
-            SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequest inValue = new SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameRequestBody();
+        public SimpsonsWeb.GoTServiceReference.Character[] SearchByFirstName(string firstName) {
+            SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequest inValue = new SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequest();
+            inValue.Body = new SimpsonsWeb.GoTServiceReference.SearchByFirstNameRequestBody();
             inValue.Body.firstName = firstName;
-            SimpsonsWeb.SimpsonServiceReference.SearchByFirstNameResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).SearchByFirstName(inValue);
+            SimpsonsWeb.GoTServiceReference.SearchByFirstNameResponse retVal = ((SimpsonsWeb.GoTServiceReference.GoTServiceSoap)(this)).SearchByFirstName(inValue);
             return retVal.Body.SearchByFirstNameResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.SearchByJobResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.SearchByJob(SimpsonsWeb.SimpsonServiceReference.SearchByJobRequest request) {
-            return base.Channel.SearchByJob(request);
-        }
-        
-        public SimpsonsWeb.SimpsonServiceReference.Character[] SearchByJob(string job) {
-            SimpsonsWeb.SimpsonServiceReference.SearchByJobRequest inValue = new SimpsonsWeb.SimpsonServiceReference.SearchByJobRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.SearchByJobRequestBody();
-            inValue.Body.job = job;
-            SimpsonsWeb.SimpsonServiceReference.SearchByJobResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).SearchByJob(inValue);
-            return retVal.Body.SearchByJobResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersResponse SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap.CountNumberOfCharacters(SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequest request) {
-            return base.Channel.CountNumberOfCharacters(request);
-        }
-        
-        public string CountNumberOfCharacters() {
-            SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequest inValue = new SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequest();
-            inValue.Body = new SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersRequestBody();
-            SimpsonsWeb.SimpsonServiceReference.CountNumberOfCharactersResponse retVal = ((SimpsonsWeb.SimpsonServiceReference.SimpsonsServiceSoap)(this)).CountNumberOfCharacters(inValue);
-            return retVal.Body.CountNumberOfCharactersResult;
         }
     }
 }

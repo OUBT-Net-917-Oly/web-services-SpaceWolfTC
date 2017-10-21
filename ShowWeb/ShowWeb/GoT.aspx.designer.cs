@@ -10,7 +10,7 @@
 namespace SimpsonsWeb {
     
     
-    public partial class Simpsons {
+    public partial class GoT {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace SimpsonsWeb {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lblMessage control.
+        /// lblgotMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.Label lblgotMessage;
         
         /// <summary>
         /// btnGetAll control.
@@ -40,13 +40,13 @@ namespace SimpsonsWeb {
         protected global::System.Web.UI.WebControls.Button btnGetAll;
         
         /// <summary>
-        /// lblCharacters control.
+        /// lblgotCharacter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCharacters;
+        protected global::System.Web.UI.WebControls.Label lblgotCharacter;
         
         /// <summary>
         /// txtLastName control.
@@ -67,13 +67,13 @@ namespace SimpsonsWeb {
         protected global::System.Web.UI.WebControls.Button btnFindByLast;
         
         /// <summary>
-        /// lblLastMatch control.
+        /// lblgotLastMatch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLastMatch;
+        protected global::System.Web.UI.WebControls.Label lblgotLastMatch;
         
         /// <summary>
         /// txtFirstName control.
@@ -94,57 +94,12 @@ namespace SimpsonsWeb {
         protected global::System.Web.UI.WebControls.Button btnFindByFirst;
         
         /// <summary>
-        /// lblFirstMatch control.
+        /// lblgotFirstMatch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFirstMatch;
-        
-        /// <summary>
-        /// txtJob control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtJob;
-        
-        /// <summary>
-        /// btnFindByJob control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFindByJob;
-        
-        /// <summary>
-        /// lblJobMatch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblJobMatch;
-        
-        /// <summary>
-        /// btnCountNumberOfCharacters control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCountNumberOfCharacters;
-        
-        /// <summary>
-        /// lblCount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCount;
+        protected global::System.Web.UI.WebControls.Label lblgotFirstMatch;
     }
 }

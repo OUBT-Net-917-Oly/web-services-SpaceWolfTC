@@ -15,6 +15,9 @@
             <asp:LinkButton ID="lnkSimpsons" runat="server" PostBackUrl="~/Simpsons.aspx">Go to Simpsons Page</asp:LinkButton>
         </div>
         <%-- Create a new page and add a link to the new show or team page here --%>
+        <div class="content">
+            <asp:LinkButton ID="lnkGoT" runat="server" PostBackUrl="~/Thrones.aspx">Go to Game Of Thrones Page</asp:LinkButton>
+        </div>
     </form>
 </body>
 </html>

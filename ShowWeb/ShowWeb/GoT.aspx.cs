@@ -4,33 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using SimpsonsWeb.SimpsonServiceReference;
+using SimpsonsWeb.GoTServiceReference;
 
 namespace SimpsonsWeb
 {
-    public partial class Simpsons : System.Web.UI.Page
+    public partial class Thrones : System.Web.UI.Page
     {
-        private SimpsonsServiceSoapClient _service;
+        private GoTServiceSoapClient _service;
 
-        public Simpsons()
+        public Thrones()
         {
-            _service = new SimpsonsServiceSoapClient();
+            _service = new GoTServiceSoapClient();
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                var message = _service.Hello();
-                lblMessage.Text = message;
-            }
-            catch (Exception ex)
-            {
-                lblMessage.Text = "Sorry the Simpsons service is currently unavailable.";
-                btnGetAll.Enabled = false;
-                btnFindByLast.Enabled = false;
-                //throw;
-            }
         }
 
         protected void btnGetAll_Click(object sender, EventArgs e)
@@ -44,7 +32,7 @@ namespace SimpsonsWeb
                 names = names + $"{character.FirstName} {character.LastName} <br>";
             }
 
-            lblCharacters.Text = names;
+            lblgotCharacter.Text = names;
         }
 
         protected void btnFindByLast_Click(object sender, EventArgs e)
@@ -58,7 +46,7 @@ namespace SimpsonsWeb
                 names = names + $"{character.FirstName} {character.LastName} <br>";
             }
 
-            lblLastMatch.Text = names;
+            lblgotLastMatch.Text = names;
         }
 
         protected void btnFindByFirst_Click(object sender, EventArgs e)
@@ -72,30 +60,7 @@ namespace SimpsonsWeb
                 names = names + $"{character.FirstName} {character.LastName} <br>";
             }
 
-            lblFirstMatch.Text = names;
-        }
-
-        protected void btnFindByJob_Click(object sender, EventArgs e)
-        {
-            List<Character> characters = _service.SearchByJob(txtJob.Text).ToList();
-
-            string names = "";
-
-            foreach (var character in characters)
-            {
-                names = names + $"{character.FirstName} {character.LastName} <br>";
-            }
-
-            lblJobMatch.Text = names;
-        }
-
-        protected void btnCountNumberOfCharacters_Click(object sender, EventArgs e)
-        {
-            
-            string total = (_service.CountNumberOfCharacters());
-
-
-            lblCount.Text = total;
+            lblgotFirstMatch.Text = names;
         }
     }
 }

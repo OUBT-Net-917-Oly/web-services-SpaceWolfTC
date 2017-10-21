@@ -55,6 +55,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\GoTServiceReference\GoTService.disco" />
+    <None Include="Connected Services\GoTServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\GoTServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\GoTServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="GoT.aspx" />
+    <Content Include="Connected Services\GoTServiceReference\SimpsonsWeb.GoTServiceReference.Character.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\SimpsonServiceReference\SimpsonsService.disco" />
     <None Include="Connected Services\SimpsonServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\SimpsonServiceReference\configuration.svcinfo" />
@@ -76,6 +87,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\GoTServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="GoT.aspx.cs">
+      <DependentUpon>GoT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoT.aspx.designer.cs">
+      <DependentUpon>GoT.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\SimpsonServiceReference\SimpsonsService.wsdl" />
+    <None Include="Connected Services\GoTServiceReference\GoTService.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\SimpsonServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\GoTServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

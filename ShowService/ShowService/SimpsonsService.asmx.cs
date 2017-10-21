@@ -55,26 +55,52 @@ namespace ShowService
         }
 
         [WebMethod]
-        public List<Character> SearchByFirstName(string lastName)
+        public List<Character> SearchByFirstName(string firstName)
         {
             //implement this
             //case insensitive
-            throw new NotImplementedException();
+            List<Character> matches;
+            matches = new List<Character>();
+
+            foreach (var person in People)
+            {
+                if (person.FirstName.ToLower().StartsWith(firstName.ToLower()))
+                {
+                    matches.Add(person);
+                }
+            }
+            return matches;
         }
 
         [WebMethod]
-        public List<Character> SearchByJob(string lastName)
+        public List<Character> SearchByJob(string job)
         {
             //implement this
             //case insensitive
-            throw new NotImplementedException();
+            List<Character> matches;
+            matches = new List<Character>();
+
+            foreach (var person in People)
+            {
+                if (person.Job.ToLower().StartsWith(job.ToLower()))
+                {
+                    matches.Add(person);
+                }
+            }
+            return matches;
         }
 
         [WebMethod]
-        public int CountNumberOfCharacters()
+        public string CountNumberOfCharacters()
         {
             //implement this
-            throw new NotImplementedException();
+            var i = 0;
+            foreach (var person in People)
+            {
+                i++;
+            }
+            string total= i.ToString();
+            return total;
         }
 
         private void GetCharacters()
@@ -108,10 +134,37 @@ namespace ShowService
                 Job = "Belcher"
             };
 
+            var lisa = new Character
+            {
+                FirstName = "Lisa",
+                LastName = "Simpson",
+                Job = "Brainiac"
+
+            };
+
+            var maggie = new Character
+            {
+                FirstName = "Maggie",
+                LastName = "Simpson",
+                Job = "Baby"
+
+            };
+
+            var burns = new Character
+            {
+                FirstName = "Mr",
+                LastName = "Burns",
+                Job = "Evil Boss"
+
+            };
+
             People.Add(homer);
             People.Add(marge);
             People.Add(mo);
             People.Add(barney);
+            People.Add(lisa);
+            People.Add(maggie);
+            People.Add(burns);
         }
 
     }

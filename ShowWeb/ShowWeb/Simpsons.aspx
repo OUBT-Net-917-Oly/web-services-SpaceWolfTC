@@ -26,6 +26,28 @@
         </div>
         <br />
         <br />
+        <div>
+            FirstName: <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox><br />
+            <asp:Button ID="btnFindByFirst" runat="server" Text="Find by First Name" OnClick="btnFindByFirst_Click" /> <br />
+            <asp:Label ID="lblFirstMatch" runat="server" Text=""></asp:Label>
+        </div>
+        <br />
+        <br />
+
+         <div>
+            Job: <asp:TextBox ID="txtJob" runat="server"></asp:TextBox><br />
+            <asp:Button ID="btnFindByJob" runat="server" Text="Find by Job" OnClick="btnFindByJob_Click" /> <br />
+            <asp:Label ID="lblJobMatch" runat="server" Text=""></asp:Label>
+        </div>
+        <br />
+        <br />
+        <div>
+
+            <asp:Button ID="btnCountNumberOfCharacters" runat="server" Text="Total Characters" OnClick="btnCountNumberOfCharacters_Click" /> <br />
+            <asp:Label ID="lblCount" runat="server" Text=""></asp:Label>
+        </div>
+        <br />
+        <br />
     </form>
 </body>
 </html>
